@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>ESMAScript Modules test</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>ECMAScript modules support in the current browser</h1>
+
+<table class="table">
+    <tr class="es-modules">
+        <td>
+            <a href="https://blog.hospodarets.com/native-ecmascript-modules-tde-first-overview">
+                ECMAScript modules
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
+    <tr class="nomodule">
+        <td>
+            <a href="https://blog.hospodarets.com/native-ecmascript-modules-nomodule">
+                "nomodule" fallback attribute
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
+    <tr class="dynamic-import">
+        <td>
+            <a href="https://blog.hospodarets.com/native-ecmascript-modules-dynamic-import">
+                Dynamic import()
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
+    <tr class="service-worker">
+        <td>
+            ES modules in
+            <a href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">
+                Service Workers
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
+    <tr class="web-worker">
+        <td>
+            ES modules in
+            <a href="https://www.w3schools.com/html/html5_webworkers.asp">
+                Web Workers
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
+</table>
+
+<div class="notes">
+    <a href="https://drafts.css-houdini.org/worklets/">
+        Worklets
+    </a>
+    are loaded and executed as ES modules
+    <a href="https://drafts.css-houdini.org/worklets/#code-idempotency">
+        by default.
+    </a>
+</div>
+
+<div class="author">
+    by <a href="https://twitter.com/malyw">@malyw</a>
+</div>
+
+<a href="https://github.com/malyw/es-modules-test">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67"
+         alt="Fork me on GitHub"
+         width="90"
+         height="90"
+         data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+
+<!-- script-modules -->
+<script type="module" src="js/script-modules/module.js"></script>
+<script nomodule src="js/script-modules/classic.js"></script>
+
+<!--dynamic-module-->
+<script src="js/dynamic-module/dynamic-module.js"></script>
+
+<!--service-worker-->
+<script src="js/service-worker/service-worker-main.js"></script>
+
+<!--web-worker-->
+<script src="js/web-worker/web-worker-main.js"></script>
+
+</body>
+
+</html>

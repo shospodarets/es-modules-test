@@ -1,0 +1,166 @@
+/* reset + structure */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 25px;
+    color: #fff;
+    padding: 5px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.notes {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.author {
+    font-size: 15px;
+    text-align: right;
+    padding-top: 20px;
+}
+
+/* common */
+
+.yes {
+    /* assume the feature is not supported till it's changed from JS */
+    display: none;
+}
+
+tr {
+    background-color: #f00;
+}
+
+body.es-modules-yes {
+    background-color: green;
+}
+
+body.es-modules-no {
+    background-color: #f00;
+}
+
+body.es-modules-yes.es-modules-no {
+    background-color: #FFA500;
+}
+
+/* es-modules-yes */
+body.es-modules-yes .es-modules .yes {
+    display: block;
+}
+
+body.es-modules-yes .es-modules .no {
+    display: none;
+}
+
+body.es-modules-yes .es-modules {
+    background-color: green;
+}
+
+/* nomodule */
+body.es-modules-yes .nomodule .yes {
+    /* assume the feature is supported is ES modules are supported, till it's changed from JS */
+    display: block;
+}
+
+body.es-modules-yes .nomodule .no {
+    display: none;
+}
+
+body.es-modules-yes.es-modules-no .nomodule .no {
+    display: block;
+}
+
+body.es-modules-yes.es-modules-no .nomodule .yes {
+    display: none;
+}
+
+tr.nomodule {
+    background-color: green;
+}
+
+body.es-modules-no tr.nomodule,
+body.es-modules-yes.es-modules-no tr.nomodule {
+    background-color: #f00;
+}
+
+/* dynamic-import */
+body.dynamic-import-yes .dynamic-import .yes {
+    display: block;
+}
+
+body.dynamic-import-yes .dynamic-import .no {
+    display: none;
+}
+
+body.dynamic-import-yes .dynamic-import {
+    background-color: green;
+}
+
+/* service-worker */
+body.service-worker-yes .service-worker .yes {
+    display: block;
+}
+
+body.service-worker-yes .service-worker .no {
+    display: none;
+}
+
+body.service-worker-yes .service-worker {
+    background-color: green;
+}
+
+/* web-worker */
+body.web-worker-yes .web-worker .yes {
+    display: block;
+}
+
+body.web-worker-yes .web-worker .no {
+    display: none;
+}
+
+body.web-worker-yes .web-worker {
+    background-color: green;
+}
+
+/* table */
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0;
+}
+
+table caption {
+    padding: 0.5rem 0.625rem 0.625rem;
+    font-weight: bold;
+}
+
+table thead th,
+table thead td,
+table tfoot th,
+table tfoot td {
+    padding: 0.5rem 0.625rem 0.625rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+table tbody th,
+table tbody td {
+    padding: 0.5rem 0.625rem 0.625rem;
+}
+
+table tbody tr:nth-child(even) {
+    border-bottom: 0;
+}
