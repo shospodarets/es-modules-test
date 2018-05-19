@@ -1,1 +1,1 @@
-/* empty module */
+import '../empty-module.js';

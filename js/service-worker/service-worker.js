@@ -1,1 +1,0 @@
-import './service-module.js';

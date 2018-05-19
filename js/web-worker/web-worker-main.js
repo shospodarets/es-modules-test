@@ -1,9 +1,9 @@
 if (window.Worker) {
-    const worker = new Worker("./js/web-worker/web-worker.js", {type: "module"});
+    const worker = new Worker("./js/web-worker/web-worker-module.js", {type: "module"});
 
-    worker.postMessage('');// Start the worker.
+    worker.postMessage('test');// Start the worker.
 
-    worker.onmessage = () => {
-        document.body.classList.add('worker-yes');
-    };
+    worker.addEventListener('message', function (e) {
+        document.body.classList.add('web-worker-yes');
+    });
 }

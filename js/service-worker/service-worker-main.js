@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(
-        'js/service-worker/service-worker.js',
+        'js/service-worker/service-worker-module.js',
         {
             scope: './js/service-worker/',
             type: 'module' // 'classic' is a default value

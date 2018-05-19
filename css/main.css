@@ -135,6 +135,19 @@ body.web-worker-yes .web-worker {
     background-color: green;
 }
 
+/* import-meta */
+body.import-meta-yes .import-meta .yes {
+    display: block;
+}
+
+body.import-meta-yes .import-meta .no {
+    display: none;
+}
+
+body.import-meta-yes .import-meta {
+    background-color: green;
+}
+
 /* table */
 table {
     width: 100%;

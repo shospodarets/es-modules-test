@@ -71,6 +71,17 @@
             <div class="yes">Yes</div>
         </td>
     </tr>
+    <tr class="import-meta">
+        <td>
+            <a href="http://2ality.com/2017/11/import-meta.html">
+                import.meta
+            </a>
+        </td>
+        <td>
+            <div class="no">No</div>
+            <div class="yes">Yes</div>
+        </td>
+    </tr>
 </table>
 
 <div class="notes">
@@ -103,10 +114,13 @@
 <script src="js/dynamic-module/dynamic-module.js"></script>
 
 <!--service-worker-->
-<script src="js/service-worker/service-worker-main.js"></script>
+<script type="module" src="js/service-worker/service-worker-main.js"></script>
 
 <!--web-worker-->
-<script src="js/web-worker/web-worker-main.js"></script>
+<script type="module" src="js/web-worker/web-worker-main.js"></script>
+
+<!--import-meta-->
+<script type="module" src="js/import-meta/import-meta-main.js"></script>
 
 </body>
 
